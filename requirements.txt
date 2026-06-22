@@ -1,0 +1,9 @@
+# The indicators + analysis are pure-Python (no pandas/numpy, no key).
+# Only the market-report narrative uses an LLM.
+
+# --- LLM report (optional; key in .env) ---
+anthropic>=0.39          # default provider
+openai>=1.40             # optional alternative
+
+python-dotenv>=1.0
+pytest>=8.0

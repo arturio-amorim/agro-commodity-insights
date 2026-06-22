@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agro-commodity-insights"
+version = "0.1.0"
+description = "Analyze agricultural commodity price series (pure-Python indicators) and generate a market report with an LLM."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Arturio Amorim Sobrinho" }]
+keywords = ["agribusiness", "commodities", "time-series", "indicators", "llm", "ai"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
